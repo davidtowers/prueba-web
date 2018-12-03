@@ -10,6 +10,10 @@ iframe {
     margin: 0 auto;
 }
 
+#subtitulo {
+    font-weight: bold;
+}
+
 /* Dimensionamiento sección izquierda */
 .seccion-izq {
     width: 35%;
@@ -28,7 +32,7 @@ iframe {
 }
 
 /* Menú vertical */
-.vertical-menu a, section {
+.vertical-menu a, section, aside {
     background-color: #eee;
     color: black;
     display: block;
