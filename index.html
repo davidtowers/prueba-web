@@ -3,35 +3,76 @@
 	
 	<head>
 		<link rel="stylesheet" href="css/styles.css">
-		<title>Página web</title>
+		<title>Ciudades & noticias</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
 	<body>
-		<h1>Prueba de posicionamientos y funciones</h1>
-		
-		<div class="vertical-menu">
-  			<a href="#" class="active">Ciudades</a>
-  			<a href="#">Teruel</a>
-  			<a href="#">Zaragoza</a>
-  			<a href="#">Huesca</a>
-  			<a href="#">Valencia</a>
-		</div>
+		<h1 id="titulo-pagina">Ciudades & noticias</h1>
 
-		<section>
-		  <article>
-		    <h1>London</h1>
-		    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-		    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-		  </article>
+		<section  class="seccion-dr" id="teruel" float="top" >
+			<h3 class="titulo-wiki">Teruel</h3>
+			<iframe src="demo_iframe.htm" name="teruel_frame">
+			</iframe>
+	    </section>
+
+	    <section class="seccion-dr" id="zaragoza" >
+			<h3 class="titulo-wiki">Zaragoza</h3>
+			<iframe src="demo_iframe.htm" name="zaragoza_frame"></iframe>
+	    </section>
+
+	    <section class="seccion-dr" id="huesca" >
+			<h3 class="titulo-wiki">Huesca</h3>
+			<iframe src="demo_iframe.htm" name="huesca_frame"></iframe>
+	    </section>
+
+		<section class="seccion-izq">
+			<div class="vertical-menu">
+	  			<h3 id="titulo-menu-ciudades">Ciudades</h3>
+	  			<a href="https://es.wikipedia.org/wiki/Teruel" target="teruel_frame">Teruel</a>
+	  			<a href="https://es.wikipedia.org/wiki/Zaragoza" target="zaragoza_frame">Zaragoza</a>
+	  			<a href="https://es.wikipedia.org/wiki/Huesca" target="huesca_frame">Huesca</a>
+			</div>			
 		</section>
 
-		<footer>
-		  <p>Footer</p>
-		</footer>
+		<section class="seccion-izq" >
+			<article id="articulo">
+			    <h2>Artículo: Visita a un pueblo fantasma</h2>
+			    <h1>La despoblación del interior de la provincia de Granada deja en riesgo de extinción al 33% de los municipios
+			    </h1>
+			    <p>
+			    	Donde hubo un pueblo hay una ruina, algo que en su día se llamó Tablate, que llegó a tener 2.000 vecinos en su mejor momento, Ayuntamiento propio, cinco molinos, bares y una biblioteca. Hoy el paisaje consiste en viviendas saqueadas de techos desplomados, puertas arrancadas, cuerdas sosteniendo vigas de madera a la vista y boquetes. El único recibimiento del pueblo al visitante es una cocina colocada en medio del camino.
+			    </p>
+			    <p>
+			    	El pasado jueves caía la lluvia en medio de calles fantasmales devoradas por la mala hierba. De repente detrás de un árbol se movió algo, y apareció, provocando un susto de muerte, un hombre de unos 55 años, moreno de piel, gafas y gorra. Pudo haber aparcado el coche para subir al pueblo y mear en algún muro; podía estar también rebuscando entre ruinas algo de valor que sobreviva en esta tierra expoliada.
+				</p>
+			    <p>	—Justo Espino —dice estirando la mano.</p>
+			    <p>
+			    	El periodista no se la da hasta aclarar las circunstancias del encuentro. En su lugar, le aprieta el brazo en señal no verbal de correspondencia de cariño para que no perciba desafío o indicios de violencia. “¿Vive aquí usted?”. “Yo cómo voy a vivir aquí, si no hay una casa en pie”. Espino cuenta que vive en Órgiva, en las laderas de la Alpujarra, al lado de la mayor comuna jipi de España; un lugar en el que se concentran casi 300 personas de más de sesenta nacionalidades distintas. Él no es jipi, aclara. Es de Granada y vive varios meses al año en Marruecos, donde tiene un hijo.
+			    </p>
+			    <p>	—¿Estaba llevándose cosas del pueblo?</p>
+			    <p>
+			    	—No, pero antes sí lo hacía. Hay muchos pueblos abandonados por aquí, y conozco a mucha gente que se dedica a ir por ahí, entrar y llevarse lo que puede. Yo me llevaba vasijas, algunos elementos de piedras, cosas de valor. Iba al anticuario con eso y me sacaba un dinero.
+			    </p>
 
+			    <p>
+			    	Espino se despide de Tablate. “Buen pueblo. Siempre lo veía al pasar, pero nunca había parado”. ¿Por qué lo hizo? “Pues mira, me apetecía fumarme un canutillo”, dice enseñando el porro de las diez de la mañana, día nublado de noviembre en la Granada despoblada.
+		    	</p>  
+		    	<br>
+		    </article>
+	    </section>
+ 
+	    <footer>
+	        <div class='pie_de_pagina'>
+	            <p>Contenido del pie de página</p>
+	        </div>
+	    </footer>
 	</body>
+
+	<script 
+		src="js/miscript.js" language="javascript" type="text/javascript">
+	</script>
 </html>
 
 

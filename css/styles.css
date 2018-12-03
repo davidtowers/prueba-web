@@ -1,26 +1,34 @@
-* {
-    box-sizing: border-box;
-}
-
+/* Todo el cuerpo */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the header */
-header {
-    background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
+iframe {
+    display:block;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Dimensionamiento sección izquierda */
+.seccion-izq {
+    width: 35%;
+}
+
+/* Dimensionamiento sección derecha */
+.seccion-dr {
+    width: 65%;
+    height: 25%;
+    float: right;
+}
+
+/* Color de fondo de las secciones */
+.seccion-dr, .seccion-izq {
+    background-color: #f1f1f1;
 }
 
 /* Menú vertical */
-.vertical-menu {
-    width: 200px;
-}
-
-.vertical-menu a {
+.vertical-menu a, section {
     background-color: #eee;
     color: black;
     display: block;
@@ -32,53 +40,46 @@ header {
     background-color: #ccc;
 }
 
-.vertical-menu a.active {
+#titulo-menu-ciudades, #titulo-pagina, .titulo-wiki {
     background-color: #4CAF50;
     color: white;
+    padding: 12px;
+    font-weight: bold;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-    float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
+/* Artículo */
+#articulo {
     padding: 20px;
 }
 
-/* Style the list inside the menu */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+/* Reloj *//*
+#canvas {
+    width: 250px;
+    height: 250px;
+    background-color: #333;
+}*/
 
-article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the footer */
+/* Pie de página */
 footer {
-    background-color: #777;
-    padding: 10px;
+    position: relative;
+    /* Altura total del footer en px con valor negativo */
+    margin-top: -50px;
+    /* Altura del footer en px. Se han restado los 5px del margen
+       superior mas los 5px del margen inferior
+    */
+    height: 40px;
+    padding: 5px 0px;
+    clear: both;
+    background: #4CAF50;
     text-align: center;
-    color: white;
+    color: #fff;
 }
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-    nav, article {
-        width: 100%;
-        height: auto;
-    }
+ 
+/* Esta clase define la anchura del contenido y la posicion centrada 
+   El contenido queda centrado y limitado, pero la cabecera y el pie
+   llegan hasta los limites del navegador.
+*/
+.pie_de_pagina {
+    width: 960px;
+    margin: 0 auto;
 }
